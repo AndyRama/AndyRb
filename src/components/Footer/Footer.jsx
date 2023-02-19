@@ -9,7 +9,7 @@ import {
   aPropos,
 } from './datalinklist'
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className="footer">
       <section className="resection">

@@ -3,7 +3,7 @@ import './LinkList.scss'
 // import { asistance } from "./datalinklist"; importer le bon
 import { Link } from 'react-router-dom'
 
-const LinkList = ({ title, tableau }) => {
+function LinkList({ title, tableau }) {
   const data = tableau // changer
 
   return (

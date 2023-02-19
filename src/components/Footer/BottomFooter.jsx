@@ -2,7 +2,7 @@ import React from 'react'
 import Cgu from './Cgu'
 import './BottomFooter.scss'
 
-const BottomFooter = () => {
+function BottomFooter() {
   return (
     <section className="BottomFooter">
       <Cgu />
