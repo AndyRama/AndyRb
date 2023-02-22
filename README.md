@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# AndyRb 🇫🇷
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://andy-rb.com/
 
-## Available Scripts
+------------------------------------------------
 
-In the project directory, you can run:
+Training Développement d'un clone de AirBnb en JavaScript React 
 
-### `npm start`
+**Selectionner un appartement**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<kbd>![Selectionner un appartement]()</kbd>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> PROBLEMATIQUE
+Le site de Aibnb, plateforme de location de logements entre particuliers (plus de 500 annonces postées par jour)
 
-### `npm test`
+> BESOIN
+Création totale du site avec une stack complète en JavaScript avec NodeJS côté Back-end, et React côté Front-end.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Livrables
 
-### `npm run build`
+> React App
+- code React du projet
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Ressources fournies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [maquette UI](https://airbnb.com)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Editeur recommandé
 
-### `npm run eject`
+* [Visual Studio code](https://code.visualstudio.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prérequis
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [Git](https://git-scm.com/) pour cloner les repos
+* [nodeJS](https://nodejs.org/fr/) (version 14.20.1) pour exécuter les commandes
+* [npm](https://www.npmjs.com/) (version 6.14.17) pour lancer l'application (front-end)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Dépendances
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* [react-router-dom](https://reactrouter.com/web/guides/quick-start) (version 6.4.2)
+* [Prop-types](https://www.npmjs.com/package/prop-types) (version 15.8.1)
 
-## Learn More
+### Etape: Lancement du front-end
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Cloner le repo du projet : `gh repo clone AndyRama/AndyRb`
+- Aller dans ce dossier : `cd AndyRb `
+- Installer ses dépendances : `npm install`
+- Le lancer sur le port 3001 : `npm run start`
+- Ouvrez [http://localhost:3000](http://localhost:3000) pour l'afficher dans votre navigateur.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---------------------------

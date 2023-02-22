@@ -29,6 +29,7 @@ const Cgu = () => {
       url: 'https://www.airbnb.fr/about/company-details',
     },
   ]
+
   return (
     <div>
       <ul className="cguUl">
