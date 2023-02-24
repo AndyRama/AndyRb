@@ -5,7 +5,7 @@ import './Navbar.scss'
 function Navbar() {
   return (
     <div className="navbar">
-      <IconAirbnb />
+      {/* <IconAirbnb /> */}
       <SearchBar />
     </div>
   )
