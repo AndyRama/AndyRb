@@ -15,10 +15,10 @@ function Navbar() {
         <SearchBar />
         <div className="Nav-Buttons-Wrapper">
           <Link to="/" className={location.pathname === '/'} page="home">
-            Accueil
+            Home
           </Link>
           <Link to="/Host" className={location.pathname === '/Host'}>
-            A Propos
+            Host
           </Link>
         </div>
       </nav>

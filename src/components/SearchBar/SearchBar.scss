@@ -1,10 +1,11 @@
 .search-bar {
-  max-width: 850px;
+  width: 850px;
   height: 64px;
   background-color: white;
   border-radius: 32px;
-  display: contents;
+  display: flex;
 }
+
 .button {
   height: 100%;
   position: relative;
@@ -15,6 +16,7 @@
   font-weight: bold;
   cursor: pointer;
 }
+
 .placeholder {
   font-weight: normal;
   color: grey;
@@ -24,24 +26,29 @@
   border-radius: 32px;
   background-color: rgb(235, 235, 235);
 }
+
 .destination-container {
   flex: 1.5 0 0;
 }
+
 .destination input {
   border: none;
   background: none;
   outline: none;
 }
+
 .dates {
   flex: 1 0 0;
 }
+
 .guests {
   flex: 1 0 0;
   z-index: 2;
 }
+
 .guests-container {
   position: relative;
-  flex: 0.95 0 auto;
+  // flex: 0.95 0 auto;
   display: flex;
   align-items: center;
 }
