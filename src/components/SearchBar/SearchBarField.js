@@ -1,4 +1,4 @@
-import './SearchBarField.css'
+import './SearchBarField.scss'
 import ResetFieldButton from './ResetFieldButton'
 import { Children, cloneElement, useEffect, useRef } from 'react'
 
