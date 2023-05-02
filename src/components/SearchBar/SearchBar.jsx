@@ -1,5 +1,6 @@
 import './SearchBar.scss'
 import { useState } from 'react'
+import DestinationPanel from './DestinationPanel'
 
 const SearchBar = () => {
   const [showDestination, setShowDestination] = useState(false)
@@ -30,6 +31,7 @@ const SearchBar = () => {
             />
           </div>
         </label>
+        {showDestination && <DestinationPanel search={search} />}
       </div>
       <div className="button dates">
         <div>
