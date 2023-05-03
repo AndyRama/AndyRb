@@ -9,7 +9,6 @@ import {
 const GuestsPanel = () => {
   return (
     <div className="" guests-panel>
-      *
       <StepperRow>
         <StepperTitle>Adultes</StepperTitle>
         <StepperSubTitle>13 ans et plus</StepperSubTitle>

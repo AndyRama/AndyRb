@@ -1,4 +1,17 @@
-.button input {
+.search-bar-panel {
+  border-radius: 32px;
+  background-color: white;
+  position: absolute;
+  margin-top: 12px;
+  overflow: hidden;
+  top: 100%;
+}
+
+.align-panel-right {
+  right: 0;
+}
+
+input {
   border: none;
   background: none;
   outline: none;
@@ -6,10 +19,6 @@
 .placeholder {
   font-weight: normal;
   color: grey;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 130px;
 }
 .button {
   height: 100%;
@@ -22,7 +31,7 @@
 }
 
 .button > div {
-  /*z-index: 5;*/
+  z-index: 5;
   position: absolute;
 }
 
@@ -46,7 +55,7 @@
   left: 0;
   background-color: white;
   border-radius: 32px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 6px 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 20px;
 }
 
 .selected-field:hover:before {

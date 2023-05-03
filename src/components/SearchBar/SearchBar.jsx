@@ -53,41 +53,34 @@ const SearchBar = () => {
             <DestinationPanel search={search} />
           </FieldPanel>
         </SearchBarField>
-        {/* </div> */}
-        {/* </div> */}
-
-        <div className="date-container">
-          <SearchBarField
-            title="Arrivée"
-            placeholder="Quand ?"
-            selectedField={selectedField}
-            fieldName="start-date"
-            onSelect={handleSelect}
-            disabledInput={true}
-            // inputValue={search}
-            // onInputValue={setSearch}
-          >
-            <FieldPanel></FieldPanel>
-          </SearchBarField>
-        </div>
-
-        <div className="date-container">
-          <SearchBarField
-            title="Départ"
-            placeholder="Quand ?"
-            selectedField={selectedField}
-            fieldName="end-date"
-            onSelect={handleSelect}
-            disabledInput={true}
-            // inputValue={search}
-            // onInputValue={setSearch}
-          >
-            <FieldPanel>
-              <GuestsPanel />
-            </FieldPanel>
-          </SearchBarField>
-        </div>
       </div>
+
+      <div className="date-container">
+        <SearchBarField
+          title="Arrivée"
+          placeholder="Quand ?"
+          selectedField={selectedField}
+          fieldName="start-date"
+          onSelect={handleSelect}
+          disabledInput={true}
+        >
+          <FieldPanel></FieldPanel>
+        </SearchBarField>
+      </div>
+
+      <div className="date-container">
+        <SearchBarField
+          title="Départ"
+          placeholder="Quand ?"
+          selectedField={selectedField}
+          fieldName="end-date"
+          onSelect={handleSelect}
+          disabledInput={true}
+        >
+          <FieldPanel />
+        </SearchBarField>
+      </div>
+      {/* </div> */}
       <div className="guests-container">
         <SearchBarField
           title="Voyageurs"
@@ -96,8 +89,6 @@ const SearchBar = () => {
           fieldName="guest"
           onSelect={handleSelect}
           disabledInput={true}
-          // inputValue={search}
-          // onInputValue={setSearch}
         >
           <SearchButton isExtended={selectedField} />
           <FieldPanel align="right">
@@ -106,7 +97,6 @@ const SearchBar = () => {
         </SearchBarField>
       </div>
     </div>
-    // </div>
   )
 }
 

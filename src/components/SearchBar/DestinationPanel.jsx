@@ -1,4 +1,3 @@
-// import './Panel.scss'
 import './DestinationPanel.scss'
 import { useEffect, useState } from 'react'
 
