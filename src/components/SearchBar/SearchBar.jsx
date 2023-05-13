@@ -7,9 +7,23 @@ import SearchButton from './SearchButton'
 
 const SearchBar = () => {
   const [search, setSearch] = useState('')
+  const [destination, setDestination] = useState('')
   const [selectedField, setSelectedField] = useState('')
+
+  const [adults, setAdults] = useState(0)
+  const [children, setChildren] = useState(0)
+  const [infants, setInfants] = useState(0)
+  const [pets, setPets] = useState(0)
+
+  const setMinAdult = () => {
+    if (!adults && (children || infants || pets)) setAdults(1)
+  }
+
+  useEffect(() => {
+    setMinAdult()
+  }, [children, infants, pets])
+
   const searchBarRef = useRef()
-  const destinationInputRef = useRef()
   useSearchBarClickOut(searchBarRef)
 
   function useSearchBarClickOut(ref) {
@@ -26,12 +40,14 @@ const SearchBar = () => {
     }, [ref])
   }
 
-  const handleResetField = () => {
-    setSearch('')
-    destinationInputRef.current.focus()
-  }
-  const handleSelect = (fieldName) => {
+  const handleSelectField = (fieldName) => {
     setSelectedField(fieldName)
+  }
+
+  const handleSelectDestination = (destination) => {
+    setDestination(destination)
+    setSelectedField('start-date')
+    setSearch(destination)
   }
 
   return (
@@ -45,7 +61,7 @@ const SearchBar = () => {
           placeholder="Où allez-vous ?"
           selectedField={selectedField}
           fieldName="destination"
-          onSelect={handleSelect}
+          onSelect={handleSelectField}
           inputValue={search}
           onInputValue={setSearch}
         >
@@ -61,7 +77,7 @@ const SearchBar = () => {
           placeholder="Quand ?"
           selectedField={selectedField}
           fieldName="start-date"
-          onSelect={handleSelect}
+          onSelect={handleSelectField}
           disabledInput={true}
         >
           <FieldPanel></FieldPanel>
@@ -74,7 +90,7 @@ const SearchBar = () => {
           placeholder="Quand ?"
           selectedField={selectedField}
           fieldName="end-date"
-          onSelect={handleSelect}
+          onSelect={handleSelectField}
           disabledInput={true}
         >
           <FieldPanel />
@@ -87,7 +103,7 @@ const SearchBar = () => {
           placeholder="Qui ?"
           selectedField={selectedField}
           fieldName="guest"
-          onSelect={handleSelect}
+          onSelect={handleSelectField}
           disabledInput={true}
         >
           <SearchButton isExtended={selectedField} />

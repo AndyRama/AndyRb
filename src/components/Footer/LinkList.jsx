@@ -1,6 +1,6 @@
 import React from 'react'
 import './LinkList.scss'
-// import { asistance } from "./datalinklist"; importer le bon
+// import { assistance } from "./datalinklist"; importer le bon
 import { Link } from 'react-router-dom'
 
 function LinkList({ title, tableau }) {
