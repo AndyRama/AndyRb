@@ -1,24 +1,16 @@
-// .destination-panel {
-//   left: 0;
-//   width: 500px;
-// }
-
 .suggestions-list {
   padding: 10px 0 10px 0;
-  width: 500 px;
+  width: 500px;
 }
-
 .suggestion {
   padding: 8px 16px 8px 32px;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-
 .suggestion:hover {
   background-color: rgb(247, 247, 247);
 }
-
 .localisation-icon-container {
   display: flex;
   align-items: center;

@@ -21,7 +21,3 @@ function App() {
 }
 
 export default App
-
-// import Host from './components/Host/Host'
-// const App = () => <Host />
-// export default App

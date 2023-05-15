@@ -1,8 +1,9 @@
 import './DestinationPanel.scss'
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const DestinationPanel = ({ search, onSelect }) => {
   const [result, setResult] = useState([])
+  const destinationNameRef = useRef()
   useEffect(() => {
     const url = 'https://photon.komoot.io/api/?q=' + search + '&lang=fr'
     fetch(url)
@@ -23,7 +24,7 @@ const DestinationPanel = ({ search, onSelect }) => {
         setResult(filteredPlaces.slice(0, 5))
       })
   }, [search])
-  // console.log(result)
+
   return (
     result.length > 0 && (
       <div className="suggestions-list">
@@ -62,7 +63,6 @@ const DestinationPanel = ({ search, onSelect }) => {
         ))}
       </div>
     )
-    // </div>
   )
 }
 

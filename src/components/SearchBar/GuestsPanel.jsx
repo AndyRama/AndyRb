@@ -32,16 +32,16 @@ const GuestsPanel = ({
         handleChange={setChildren}
       >
         <StepperTitle>Enfants</StepperTitle>
-        <StepperSubTitle>2 ans à 12 ans</StepperSubTitle>
+        <StepperSubTitle>De 2 à 12 ans</StepperSubTitle>
       </StepperRow>
       <StepperRow value={infants} handleChange={setInfants} maxValue={5}>
-        <StepperTitle maxValue={5}>Bébés</StepperTitle>
+        <StepperTitle>Bébés</StepperTitle>
         <StepperSubTitle>- de 2 ans</StepperSubTitle>
       </StepperRow>
       <StepperRow value={pets} handleChange={setPets} maxValue={5}>
-        <StepperTitle maxValue={5}>Animaux domestiques</StepperTitle>
+        <StepperTitle>Animaux domestiques</StepperTitle>
         <StepperLink>
-          <a href="/">Un animal d'assistance vous accompagne ?</a>{' '}
+          <a href="#">Un animal d'assistance vous accompagne ?</a>
         </StepperLink>
       </StepperRow>
     </div>

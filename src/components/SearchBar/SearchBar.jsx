@@ -24,6 +24,7 @@ const SearchBar = () => {
   }, [children, infants, pets])
 
   const searchBarRef = useRef()
+
   useSearchBarClickOut(searchBarRef)
 
   function useSearchBarClickOut(ref) {
@@ -33,6 +34,7 @@ const SearchBar = () => {
           setSelectedField(null)
         }
       }
+
       document.addEventListener('mousedown', handleClickOutside)
       return () => {
         document.removeEventListener('mousedown', handleClickOutside)
@@ -66,11 +68,13 @@ const SearchBar = () => {
           onInputValue={setSearch}
         >
           <FieldPanel>
-            <DestinationPanel search={search} />
+            <DestinationPanel
+              search={search}
+              onSelect={handleSelectDestination}
+            />
           </FieldPanel>
         </SearchBarField>
       </div>
-
       <div className="date-container">
         <SearchBarField
           title="Arrivée"
@@ -79,11 +83,12 @@ const SearchBar = () => {
           fieldName="start-date"
           onSelect={handleSelectField}
           disabledInput={true}
+          // inputValue={search}
+          // onInputValue={setSearch}
         >
           <FieldPanel></FieldPanel>
         </SearchBarField>
       </div>
-
       <div className="date-container">
         <SearchBarField
           title="Départ"
@@ -92,11 +97,12 @@ const SearchBar = () => {
           fieldName="end-date"
           onSelect={handleSelectField}
           disabledInput={true}
+          // inputValue={search}
+          // onInputValue={setSearch}
         >
-          <FieldPanel />
+          <FieldPanel></FieldPanel>
         </SearchBarField>
       </div>
-      {/* </div> */}
       <div className="guests-container">
         <SearchBarField
           title="Voyageurs"
@@ -105,10 +111,15 @@ const SearchBar = () => {
           fieldName="guest"
           onSelect={handleSelectField}
           disabledInput={true}
+          // inputValue={search}
+          // onInputValue={setSearch}
         >
           <SearchButton isExtended={selectedField} />
           <FieldPanel align="right">
-            <GuestsPanel />
+            <GuestsPanel
+              guestValues={{ adults, children, infants, pets }}
+              guestHandlers={{ setAdults, setChildren, setInfants, setPets }}
+            />
           </FieldPanel>
         </SearchBarField>
       </div>
