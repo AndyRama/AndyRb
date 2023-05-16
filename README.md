@@ -8,8 +8,6 @@ Training Développement d'un clone de AirBnb en JavaScript React
 
 **Selectionner un appartement**
 
-<kbd>![Selectionner un appartement]()</kbd>
-
 > PROBLEMATIQUE
 Le site de Aibnb clone, plateforme de location de logements entre particuliers (plus de 500 annonces postées par jour)
 
