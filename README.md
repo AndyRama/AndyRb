@@ -4,14 +4,14 @@ https://andy-rb.com/
 
 ------------------------------------------------
 
-Training Développement d'un clone de AirBnb en JavaScript React 
+Training Développement d'un clone de AirBnb en JavaScript React
 
 **Selectionner un appartement**
 
 <kbd>![Selectionner un appartement]()</kbd>
 
 > PROBLEMATIQUE
-Le site de Aibnb, plateforme de location de logements entre particuliers (plus de 500 annonces postées par jour)
+Le site de Aibnb clone, plateforme de location de logements entre particuliers (plus de 500 annonces postées par jour)
 
 > BESOIN
 Création totale du site avec une stack complète en JavaScript avec NodeJS côté Back-end, et React côté Front-end.
