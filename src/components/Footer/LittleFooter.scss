@@ -1,3 +1,6 @@
 li {
   text-decoration: none;
+  display: flex; /* propriété du <li> de LinkList.scss */
+  list-style-type: none; /* propriété du <li> de LinkList.scss */
+  justify-content: left; /* propriété du <li> de LinkList.scss */
 }
