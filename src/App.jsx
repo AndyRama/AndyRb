@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <SearchBar />
+        {/* <SearchBar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Host" element={<Host />} />

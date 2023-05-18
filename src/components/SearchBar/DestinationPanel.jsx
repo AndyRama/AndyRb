@@ -1,9 +1,9 @@
 import './DestinationPanel.scss'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const DestinationPanel = ({ search, onSelect }) => {
   const [result, setResult] = useState([])
-  const destinationNameRef = useRef()
+
   useEffect(() => {
     const url = 'https://photon.komoot.io/api/?q=' + search + '&lang=fr'
     fetch(url)

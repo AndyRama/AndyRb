@@ -1,7 +1,7 @@
 import './StepperRow.scss'
 import { Children, cloneElement, Fragment, useState } from 'react'
+
 const StepperRow = ({ children, maxValue, value, handleChange }) => {
-  // const [value,setValue] = useState(0)
   const handleIncrease = () => handleChange(value + 1)
   const handleDecrease = () => handleChange(value - 1)
 

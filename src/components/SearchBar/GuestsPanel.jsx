@@ -5,14 +5,8 @@ import {
   StepperSubTitle,
   StepperLink,
 } from './StepperRow'
-import { useEffect, useState } from 'react'
 
-const GuestsPanel = ({
-  maxGuest = 16,
-  animalAllowed = true,
-  guestValues,
-  guestHandlers,
-}) => {
+const GuestsPanel = ({ guestValues, guestHandlers, maxGuest = 16 }) => {
   const { adults, children, infants, pets } = guestValues
   const { setAdults, setChildren, setInfants, setPets } = guestHandlers
 
