@@ -1,7 +1,7 @@
 import './SearchButton.scss'
-const SearchButton = ({ isExtended }) => {
+const SearchButton = ({ isExtended, onClick }) => {
   return (
-    <div className="btn-search">
+    <div className="btn-search" onClick={onClick}>
       <div
         style={{
           overflow: 'hidden',

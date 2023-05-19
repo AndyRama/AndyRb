@@ -12,6 +12,7 @@ const SearchBarField = ({
   onSelect,
   children,
   disabledInput,
+  onReset,
 }) => {
   const isSelected = selectedField === fieldName
   const inputRef = useRef()
@@ -19,15 +20,18 @@ const SearchBarField = ({
     <>
       <div
         className={isSelected ? 'button selected-field' : 'button'}
-        onClick={(e) => {
+        onClick={() => {
           inputRef.current?.focus()
           onSelect(fieldName)
         }}
+        style={{ overflow: 'hidden', width: '100%' }}
       >
         <div>
           <div>{title}</div>
           {disabledInput ? (
-            <div className="placeholder">{placeholder}</div>
+            <div className="placeholder">
+              {inputValue ? inputValue : placeholder}
+            </div>
           ) : (
             <input
               disabled={disabledInput}
@@ -39,11 +43,15 @@ const SearchBarField = ({
           )}
         </div>
       </div>
+
       {isSelected && inputValue && (
-        <div className="btn-reset-container">
-          <ResetFieldButton onClick={() => onInputValue('')} />
+        <div style={{ position: 'relative', flex: '0 0 0%' }}>
+          <div className="btn-reset-container">
+            <ResetFieldButton onClick={onReset} />
+          </div>
         </div>
       )}
+
       {Children.map(children, (child) =>
         cloneElement(child, { isSelected: isSelected })
       )}
@@ -51,15 +59,17 @@ const SearchBarField = ({
   )
 }
 
-const FieldPanel = ({ children, align, isSelected }) => {
+const FieldPanel = ({ children, align, isSelected, fieldName }) => {
   if (!isSelected) return null
   return (
     <>
       <div
         className={
-          align === 'right'
+          (align === 'right'
             ? 'search-bar-panel align-panel-right'
-            : 'search-bar-panel'
+            : 'search-bar-panel') +
+          (fieldName === 'startDate' ? ' search-bar-panel-start-date' : '') +
+          (fieldName === 'endDate' ? ' search-bar-panel-end-date' : '')
         }
       >
         {children}

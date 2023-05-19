@@ -185,8 +185,10 @@ const SearchBar = () => {
           fieldName="guest"
           onSelect={handleSelectField}
           disabledInput={true}
+          inputValue={getGuestsText()}
+          onReset={handleResetGuests}
         >
-          <SearchButton isExtended={selectedField} />
+          <SearchButton isExtended={selectedField} onClick={handleSearch} />
           <FieldPanel align="right">
             <GuestsPanel
               guestValues={{ adults, children, infants, pets }}

@@ -11,6 +11,15 @@
   right: 0;
 }
 
+.search-bar-panel-start-date {
+  right: 0;
+  transform: translateX(50%);
+}
+.search-bar-panel-end-date {
+  left: 0;
+  transform: translateX(-50%);
+}
+
 input {
   border: none;
   background: none;
@@ -20,6 +29,10 @@ input {
 .placeholder {
   font-weight: normal;
   color: grey;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 130px;
 }
 
 .button {
@@ -33,7 +46,7 @@ input {
 }
 
 .button > div {
-  z-index: 5;
+  // z-index: 5;
   position: absolute;
 }
 
