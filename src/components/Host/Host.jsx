@@ -4,14 +4,21 @@ import HostHosting from './HostHosting'
 import HostExperiences from './HostExperiences'
 import HostGift from './HostGift'
 import SearchBar from './../SearchBar/SearchBar'
+import AccountMenuHeader from '../menu_account/AccountMenuHeader'
+import Header from '../Header/header'
 
 const Host = () => {
   return (
     <>
       <header className="h__header">
+        <div className="top-header">
+          <Header />
+        </div>
         <SearchBar />
+
         <HostHeaderCard />
       </header>
+
       <main className="h__main">
         <HostExperiences />
         <HostGift />
