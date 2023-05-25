@@ -1,5 +1,11 @@
-const Result = () => {
-  return <div></div>
-}
+import ResultsList from './ResultsList'
 
-export default Result
+const Results = () => {
+  return (
+    <div>
+      <div>
+        <ResultsList />
+      </div>
+    </div>
+  )
+}
