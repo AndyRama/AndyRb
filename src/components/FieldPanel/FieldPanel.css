@@ -1,0 +1,26 @@
+.FieldPanel {
+    border-radius: 32px;
+    background-color: white;
+    position: absolute;
+    margin-top: 12px;
+    overflow: hidden;
+    top: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 6px 20px;
+    padding: 16px 32px 16px 32px;
+    box-sizing: border-box;
+}
+.FieldPanel:empty{
+    padding: 0;
+}
+
+.FieldPanel--right{
+    right: 0;
+}
+.FieldPanel__start-date{
+    right: 0;
+    transform: translateX(50%);
+}
+.FieldPanel__end-date{
+    left: 0;
+    transform: translateX(-50%);
+}

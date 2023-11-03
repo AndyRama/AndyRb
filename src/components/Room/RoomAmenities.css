@@ -1,0 +1,8 @@
+.RoomAmenities__title{
+    padding-bottom: 24px;
+}
+.RoomAmenities__amenities{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}

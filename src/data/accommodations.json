@@ -2,7 +2,10 @@
   {
     "id": 0,
     "hostId": 0,
-    "placeType": [0, 0],
+    "placeType": [
+      0,
+      0
+    ],
     "housingType": 0,
     "title": "Studio de rêve aux Sables d'Olonne...",
     "summary": "Emplacement idéal face à la mer et proche Arago, la plage en bas et une vue très rare au dessus des toits à 180° sur la baie. Rénové il y a 2 ans, cet appartement de 32 m2 est un vrai coup de coeur. Cuisine hyper équipée, le canapé convertible offre un couchage Bultex confort en largeur 160 vue sur mer et un lit pliant d'appoint pour un enfant. WIFI, TV grand écran plat.... Possibilité de garer vos vélos dans une cour privée dans l'immeuble. Tous les commerces et nombreux restaurants à pieds.",
@@ -22,7 +25,10 @@
   {
     "id": 1,
     "hostId": 0,
-    "placeType": [1, 4],
+    "placeType": [
+      1,
+      4
+    ],
     "housingType": 0,
     "title": "Duplex*** Les Embruns 5p Tout accessible à pieds",
     "summary": "Ce logement familial est proche de tous les sites et commodités.",
@@ -42,7 +48,10 @@
   {
     "id": 2,
     "hostId": 0,
-    "placeType": [0, 1],
+    "placeType": [
+      0,
+      1
+    ],
     "housingType": 0,
     "title": "Le Castel C.L.S Deauville",
     "summary": "Appartement de 40 m2 très lumineux à 200m de la plage, au 5ème étage avec ascenseur, résidence de standing avec place de parking en sous terrain. Séjour avec salle à manger et cuisine équipé, terrasse ensoleillée, Vue panoramique magnifique sur le port de Deauville, chambre lit 160cm, 2 SDB avec WC.",
@@ -62,7 +71,10 @@
   {
     "id": 3,
     "hostId": 0,
-    "placeType": [1, 0],
+    "placeType": [
+      1,
+      0
+    ],
     "housingType": 0,
     "title": "Villa design avec jacuzzi, la plage à pied",
     "summary": "Située entre Concarneau et Pont-Aven, sur la commune de Trégunc, Mini-villa neuve à l'architecture design, à 200m de la plage et des sentiers côtiers. Indépendante et sans vis à vis, elle dispose d'une grande terrasse privative avec jacuzzi extérieur chauffé.\nEntre amis, en famille, le temps d'un week-end ou en vacances, vous y trouverez repos et quiétude .\nEnvie de partir en vacances à plusieurs tout en voulant garder votre indépendance? 3 autres mini-villas peuvent vous accueillir!",
@@ -82,7 +94,10 @@
   {
     "id": 4,
     "hostId": 0,
-    "placeType": [0, 0],
+    "placeType": [
+      0,
+      0
+    ],
     "housingType": 0,
     "title": "Glaz-Zen 4* : 130m2, plage, vue mer panoramique",
     "summary": "Meublé classé 4 étoiles. Logement spacieux et lumineux, donnant directement sur la magnifique plage de Caroual et les sentiers de randonnée. Vue mer panoramique depuis les pièces de vie et la terrasse de 80m2.",
@@ -102,7 +117,10 @@
   {
     "id": 5,
     "hostId": 0,
-    "placeType": [1, 6],
+    "placeType": [
+      1,
+      6
+    ],
     "housingType": 0,
     "title": "Chalet autour d'un lac.",
     "summary": "Chalet dans un domaine classé 3*, situé autour d'un lac en bordure de forêt . Le domaine comprend une piscine chauffée d'Avril à fin septembre. et d'un sauna. une aire de jeu, un terrain de pétanque et d'une plage ( baignade interdite). Le logement comprend un séjour cuisine équipée. une salle de bains avec baignoire. une chambre avec lit couchage 140X180, une mezzanine avec un lit 160X200 et un lit de 80X180 .",
@@ -122,7 +140,10 @@
   {
     "id": 6,
     "hostId": 0,
-    "placeType": [1, 0],
+    "placeType": [
+      1,
+      0
+    ],
     "housingType": 0,
     "title": "Gîte fraîchement rénové",
     "summary": "Découvrez le charme du bois et de la pierre de notre gîte fraîchement rénové au coeur des prairies et forêts du parc naturel.\nProche de toutes commodités, dans notre petit hameau périgourdin, notre ancien corps de ferme vous offrira un espace de fraîcheur très agréable l'été et chaleureux l'hiver.\nVous pourrez profiter du jardin et de l'ombre du tilleul séculaire pour vos repas estivaux.\nIl y en aura pour tous les goûts: nature, vieille pierre, art, artisanat, gastronomie, sport et ballade.",
@@ -142,7 +163,10 @@
   {
     "id": 7,
     "hostId": 0,
-    "placeType": [1, 3],
+    "placeType": [
+      1,
+      3
+    ],
     "housingType": 0,
     "title": "Maison voltaire centre ville avec garage et jardin",
     "summary": "Découvrez cette maison entièrement rénovée et meublée à neuf.La maison est équipée de la fibre ainsi que les chaînes SFR .Les literies sont neuves avec des matelas de marques .\nTrès bien situé au centre ville ,magasins à proximités et boulangerie à 50 mètres , à 10 minutes à pieds de l hypercentre .\nVous disposerez d'un garage individuel fermer et d un jardin avec brasero .\n",
@@ -162,7 +186,10 @@
   {
     "id": 8,
     "hostId": 0,
-    "placeType": [1, 6],
+    "placeType": [
+      1,
+      6
+    ],
     "housingType": 0,
     "title": "Chalet avec terrasse sur grand étang",
     "summary": "Le Chalet du Moulin de Lapeyre vous accueille dans un véritable havre de paix à Saint-Estèphe en Dordogne, charmant village au coeur du Périgord & du Parc régional Périgord-Limousin.\nConstruit au bord d’un étang privé de 3 hectares et entouré d’une végétation luxuriante, ce gîte de pêche et de charme vous offrira une expérience unique en pleine nature où quiétude, repos et bien-être seront les maîtres mots.\nVous apprécierez tout particulièrement la terrasse de 45 m2 qui surplombe l’étang.",
@@ -182,7 +209,10 @@
   {
     "id": 9,
     "hostId": 0,
-    "placeType": [0, 2],
+    "placeType": [
+      0,
+      2
+    ],
     "housingType": 0,
     "title": "Maison des Beaux Arts",
     "summary": "Spacieux appartement dans les fortifications de la vieille ville de Nontron, dans le parc naturel Périgord-Limousin.",

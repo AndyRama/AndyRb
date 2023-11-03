@@ -52,6 +52,10 @@
       {
         "id": 5,
         "name": "Bungalow"
+      },
+      {
+        "id": 6,
+        "name": "Chalet"
       }
     ]
   },

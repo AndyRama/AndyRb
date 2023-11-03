@@ -1,0 +1,13 @@
+.modale__container{
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 4fr;
+    box-sizing: border-box;
+    width: 300px;
+    height: 525px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.modale__container__facture{
+    align-items: flex-end;
+}

@@ -1,0 +1,157 @@
+$header-padding: 3%;
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  //margin-bottom: 80px;
+  //max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  //box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05) ;
+
+  --menu-header-color: white;
+
+  > .grid-one-one {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+  }
+
+  > .grid-one-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  > .grid-one-three {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  > .grid-one-four {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: right;
+    -webkit-justify-content: flex-end;
+    gap: 10px;
+  }
+
+  &:after {
+    content: "";
+    background-color: inherit;
+    transform: scaleY(2) translateX(-50%);
+    transform-origin: 50% 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    z-index: -1;
+    transition: transform 250ms ease-in-out;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05) ;
+  }
+
+}
+.no-transition{
+  transition: none!important;
+  &:after{
+    transition: none!important;
+  }
+}
+
+.header__color--white{
+  background-color: white;
+  color: var(--airbnb-text-black);
+  --menu-header-color: var(--airbnb-text-black);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  //&:after{
+  //  transform: scaleY(1) translateX(-50%);
+  //  transition: transform 250ms ease-in-out;
+  //}
+}
+.header__collapsed:after{
+  transform: scaleY(1) translateX(-50%);
+  transition: transform 250ms ease-in-out;
+}
+.header__color--black{
+  background-color: black;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 250ms;
+}
+
+.MenuHeader__container {
+  display: flex;
+  white-space: nowrap;
+  gap: 20px;
+}
+
+.MenuHeader__tab {
+  position: relative;
+}
+
+.MenuHeader__tab__element {
+  color: inherit;
+  margin-right: 2%;
+  background-color: inherit;
+  border: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:after {
+    background-color: var(--menu-header-color);
+    transform: scaleX(0) translateX(-50%);
+    position: absolute;
+    content: "";
+    height: 2px;
+    z-index: 1;
+    width: 5px;
+    top: 30px;
+    left: 50%;
+    transition: transform 250ms ease-in-out;
+
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+    opacity: 0.8;
+  }
+
+  &.selected:after {
+    transform: scaleX(5);
+  }
+  &.selected:hover {
+    opacity: 1;
+  }
+  &.selected:hover:after {
+    opacity: 1;
+  }
+
+}
+
+.search-bar-wrapper {
+  position: absolute;
+  width: 850px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.hosting-button-wrapper {
+  display: flex;
+  align-items: center;
+}
