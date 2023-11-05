@@ -1,6 +1,6 @@
 # AndyRb 🇫🇷
 
-https://andy-rb.vercel.app/
+https://www.andy-rb.com/
 
 ------------------------------------------------
 
